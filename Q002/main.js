@@ -75,7 +75,6 @@ function getInputNumberValue(id){
     return Number(document.getElementById(id).value)
 }
 
-
 // função responsavel se já existe o funcionario no banco de Dados
 function validando(funcionarios, funcionario){
     let verdade;

@@ -30,7 +30,7 @@
                         <div class="telaDeCadastros">
                             <div class="inpuntNumbers">
                                 <label for="">Nome completo</label>
-                                <input type="text" name="" id="nomeDoCliente">
+                                <input type="text" name="" id="nomeDoCliente" class="nomeDoClienteCadastrado">
                             </div>
                             <div class="inpuntNumbers">
                                 <label for="">Digite o seu saldo</label>
@@ -41,20 +41,19 @@
                             <button id="limparTabela" class="botaoGrande">Limpar Clientes</button>
                         </div>
 
-                        <div class="telaDeSaque">
+                        <div class="telaDeSaque telaOculta">
                             <div class="inpuntNumbers">
                                 <label for="">Digite seu nome</label>
-                                <input type="text" name="" id="nomeDoClienteCadastrado">
+                                <input type="text" name="" class="nomeDoClienteCadastrado jaCadastrado">
                             </div>
                             <div class="inpuntNumbers">
                                 <label for="">Digite a quantidade do saque</label>
-                                <input type="number" name="saldo" id="saldo" value="0" min="0" step="0.01">
+                                <input type="number" name="saque" id="saque" value="0" min="0" step="0.01">
                             </div>
                             <div class="paraOCredito"></div>
                             <button id="fazerOSaque" class="botaoGrande"> Fazer Saque </button>
-                            <button id="atualizarSaldoAtual" class="botaoGrande">Atualizar Saldo</button>
-                            <button id="criarTabelaComSaldos" class="botaoGrande">Criar Tabela </button>
-
+                            <button id="atualizarSaldoAtual" class="botaoGrande">Criar Tabela</button>
+                            <button id="voltarParaOInicio" class="botaoGrande">Voltar</button>
 
                         </div>
 
@@ -67,7 +66,7 @@
             </div>
         </section>
         <div id="main2">
-            <section class="section2 section3">
+            <section class="placeTable">
                 
             </section>
         </div>
