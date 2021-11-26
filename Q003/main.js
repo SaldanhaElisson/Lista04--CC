@@ -1,29 +1,35 @@
-function finobbaci(){
-    
-    let valorAtual = 1;
-    let valorAnterior = 0;
-    let valorFuturo = 0
-    let elementDom =document.querySelector('.resultado');
-    let estrutura = ``;
-    elementDom.innerHTML = ' '
-    for(i = 1; i <= 12; i++){
-        estrutura += `<p> ${valorAtual} ,`
-        valorFuturo = valorAnterior + valorAtual
-        valorAnterior = valorAtual
-        valorAtual = valorFuturo
-    }
-    
-    setTimeout(function(){elementDom.innerHTML +=  estrutura; }, 1000);   
-}
+const clientesDoBanco = []
 
-//reponsavel em pegar os valores 
-function getInputNumberValue(id){
-    return Number(document.getElementById(id).value)
-}
+document.querySelector('#adicionar').addEventListener('click', (e) => {
+    e.preventDefault()
+    bancoDeFuncionarios.push(cadastrarCliente())
+    console.log(clientesDoBanco)
 
-// quando clicar no botão vai executar a função fatorial()
-document.querySelector('button').addEventListener('click', (e) =>{
-    e.preventDefault
-    
-    finobbaci()
 })
+
+document.querySelector('#fazerSaque').addEventListener('click', (e) => {
+  
+
+})
+
+function cadastrarCliente(){
+    const nome = document.querySelector('#nomeDoCliente').value
+    const saldo = Number(document.querySelector('#saldo').value)
+
+    if(cadastrarCliente.length >= 5){
+        alert('Já existe 5 clientes, faça o debito')
+    }
+
+    if(cadastrarCliente.length < 5){
+        alert(`precisa-se no minimo de 5 Clientes, já tem ${clientesDoBanco.length} cadastrados`)
+    }
+
+    return{
+        nome,
+        saldo
+    }
+}
+
+function transicaoParaSaque(){
+
+}
