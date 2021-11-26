@@ -182,6 +182,7 @@ p{
 input{
     width: 8rem;
     height: 3rem;
+    margin-bottom: 1rem;
 }
 
 button{
@@ -194,8 +195,8 @@ button{
 }
 
 
-.inpunt2 {
-    width: 12rem;
+.nome {
+    width: 20rem;
     height: 3rem;
 }
 
