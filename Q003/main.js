@@ -60,10 +60,10 @@ function transicaoParaSaque(){
     const telaDeCadastro = document.querySelector('.telaDeCadastros')
     const telaDeSaque = document.querySelector('.telaDeSaque')
 
-    // if(clientesDoBanco.length < 5){
-    //     alert(`precisa-se no minimo de 5 Clientes, já tem ${clientesDoBanco.length} cadastrados`)
-    //     return
-    // }
+    if(clientesDoBanco.length < 5){
+        alert(`precisa-se no minimo de 5 Clientes, já tem ${clientesDoBanco.length} cadastrados`)
+        return
+    }
 
     telaDeCadastro.classList.add("telaOculta")
     telaDeSaque.classList.toggle("telaOculta")
